@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yakbarn</title>
+    <link href="../static/styles/customcss.css" rel="stylesheet">
+  </head>
+  
+  
+  <body>
+    <header>
+      <p>Assessment by Niels | <a href="/">Home</a> </p>
+    </header>
+
+    <div class="container">
+      
+      <div>
+        <img src="../static/yak.png" alt="yak" style="width:35%;height:35%;display:block;margin-left:auto;margin-right: auto;">
+        <p style="text-align: center;">The current time is: {{current_time}}</p>
+        <p style="text-align: center;">The current milk is: {{milk_stock | round}}</p>
+        <p style="text-align: center;">The current wool is: {{wool_stock}}</p>
+      </div>
+
+      <div>
+        <form action="/next_day">
+            <input type="submit" value="Go to next day">
+        </form>
+      </div>
+
+      <div>
+        {% block content %}
+
+        {% endblock %}
+      </div>
+      <hr>
+
+      <footer>
+        <div>
+            <p> the footer is here! </p>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

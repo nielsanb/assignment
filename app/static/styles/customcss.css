@@ -1,0 +1,38 @@
+body{
+    max-width: 70%;
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+div {
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: white;
+    }
+
+header {
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    background-color:grey;
+    border-radius: 15px;
+    }
+
+.container {
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 15px;
+    }
+
+a, a:hover, a:active {
+    color: black;
+}
+
+p, form, input  {
+    margin: 3px;
+}

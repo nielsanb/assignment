@@ -1,0 +1,24 @@
+{% extends 'basic.html'%}
+{% block content %}
+<div>
+
+    <h1>Order here</h1>
+    <p>Please tell us what you want: </p>
+
+    <form action="/yakshop/order" method='POST'>
+        <label for="customer">Customer: </label>
+        <input name="customer" type="text">
+        <br>
+        <label for="milkorder">Milkquantity: </label>
+        <input name="milkorder" type="text">
+        <br>
+        <label for="woolorder">Woolquantity: </label>
+        <input name="woolorder" type="text">
+        <br>
+        <input type="submit" value="Order">
+    </form> 
+    
+</div>
+
+{% endblock %}
+
